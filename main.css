@@ -1,0 +1,278 @@
+:root {
+    --main-color: black;
+    --color-primary: #f3b182;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+  }
+
+
+.container {
+    max-width: 1280px;  
+    margin: 0 auto;
+  }
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    position: fixed; 
+    top: 0;  
+    left: 0;  
+    z-index: 9999;   
+    width: 100%;
+    
+}
+ 
+
+.header_wrapper {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.nav_list {
+    
+    display: flex;
+}
+
+.item {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 35px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+
+.item:hover {
+    border-bottom-color: var(--main-color);
+    transition: all 1s ease;
+}
+
+.nav_link,
+.tel,
+.email_link {
+    color: var(--color-primary);
+}
+
+.nav_link:hover {
+    color: var(--main-color);
+    transition: all 1s ease;
+}
+
+
+
+.nav_list li:last-child {
+    margin-right: 0px;
+}
+
+
+.header_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-primary);
+    line-height: 35.2px;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+
+}
+
+
+.header_subtitle { 
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.headline_img {
+    width: 600px;
+    height: 600px;
+
+}
+
+
+.header_button {
+    display: inline-block;
+    font-size: 17px;
+    background-color: rgba(255, 248, 238, 0.522);
+    color: var(--main-color);
+    line-height: 22.1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 100px;
+    padding: 15px 45px;
+    letter-spacing: 0.06em;
+    
+}
+
+.header_colum {
+    display: flex;
+    padding: 100px 40px 0 40px;
+}
+
+.header_content {
+    margin-top: 60px;
+    margin-right: 42px;
+}
+    
+
+.heading {
+    font-size: 44px;
+    padding-right: 150px;
+    padding-bottom: 42px;
+    color: var( --main-color);
+    line-height: 57.2px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+/* Каталог */
+
+.catalog {
+    background-color: rgba(255, 248, 238, 0.522);
+}
+.catalog_icon figcaption {
+    color: var(--main-color);
+    font-size: 20px;
+    line-height: 23px;
+    font-family: Georgia;
+    padding-top: 30px;
+}
+
+.column_catalog {
+    padding: 80px 40px 100px 40px;
+    
+}
+
+
+.column_catalog h2 {
+    font-size: 35px;
+    line-height: 45.5px;
+    color: var(--main-color);
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 60px;
+    text-align: center;
+ }
+
+.layout-5-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.layout-1-column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 55px;
+}
+    
+
+
+.wrapper_footer {
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.questions,
+.wait {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cat_footer {
+    width: 320px;
+    height: 270px;
+}
+
+.email {
+    padding-right: 27px;
+    padding-bottom: 40px;
+}
+
+.questions,
+.wait {
+    padding-top: 16px;
+    padding-right: 160px;
+    padding-bottom: 20px;
+}
+
+.questions h2,
+.wait h2 {
+    font-size: 35px;
+    line-height: 45.5px;
+    color: var(--main-color);
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.questions h2 {
+    margin-bottom: 40px;
+}
+
+.wait h2 {
+    
+    margin-right: 29px;
+    margin-bottom: 34px;
+}
+
+
+.questions p,
+.wait p {
+    
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 23px;    
+}
+
+.tel {
+    margin-top: 4px;
+    margin-right: 39px; 
+}
+
+.adress_1 {
+margin-bottom: 32px;
+
+}
