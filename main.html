@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/task-Digital-Design/main.css">
-    <title>Digital Design</title>
+   
+    <title>Kotomir</title>
 </head>
+
 <body>
+
+    
     <header id="header" class="header">
             
         <div class="container">
@@ -16,22 +20,36 @@
                     <div class="header_title">КОТОМИР</div>
                     <div class="header_subtitle">Без кота - жизнь не та</div>
                 </div>
+
                 
+
                 <nav class="nav">
                     <ul class="nav_list">
+
+                        
                         <li class="item">
                             <a class="nav_link" href="#headline">Главная</a>
                         </li>
                         <li class="item">
-                            <a class="nav_link" href="#catalog">Каталог</a>
+                            <a class="nav_link" href="/task-Digital-Design/catalog.html">Каталог</a>
                         </li>
                         <li class="item">
                             <a class="nav_link" href="#footer">Контакты</a>
                         </li>
+
+                        <li>
+                            <label>
+                                <input class="theme" type="checkbox" onchange="changeTheme(this.checked)">
+                               
+                              </label>
+                              
+                        </li>
                     </ul>
+                   
                 </nav>
             </div>     
         </div>
+
 
     </header>
 
@@ -44,7 +62,7 @@
                         
                         <div class="button">
                         
-                                <a class="header_button" href="#">За покупками</a>
+                                <a class="header_button" href="/task-Digital-Design/catalog.html">За покупками</a>
                             
                         </div>
                     </div>
@@ -56,73 +74,78 @@
              
         </section>
 
+        
+
 
         <section id="catalog" class="catalog">
             <div class="container">
 
-                <div class="column_catalog">
-                        <h2>Наши товары</h2>  
-                    
+                    <div class="column_catalog">
+                            <h2>Наши товары</h2>
+                    </div>
+                        
                     <div class="column">
-                        <div class="layout-5-column">
-                            <figure class="catalog_icon">
-                                <a href="#">
-                                <img src="/task-Digital-Design/images/icon-pet-food.png" alt="pet-food">
-                                <figcaption>Корм сухой и влажный</figcaption>
-                                </a>
-                            </figure>
-
-                            <figure class="catalog_icon">
-                                <a href="#">
-                                <img src="/task-Digital-Design/images/icon-toys.png" alt="toys">
-                                <figcaption>Игрушки и домики</figcaption>
-                                </a>
-                            </figure>
-
-                            <figure class="catalog_icon">
-                                <a href="#">
-                                <img src="/task-Digital-Design/images/icon-bowls-and-cups.png" alt="bowls-and-cups">
-                                <figcaption>Миски и поилки</figcaption>
-                                </a>
-                            </figure>
-                        
-                        
-                            <figure class="catalog_icon">
-                                <a href="#">
+                            
+                        <figure class="catalog_icon">
+                                    <a href="#">
+                                    <img src="/task-Digital-Design/images/icon-pet-food.png" alt="pet-food">
+                                    <figcaption>Корм сухой и влажный</figcaption>
+                                    </a>
+                        </figure>
+                                                            
+                        <figure class="catalog_icon">
+                                    <a href="#">
+                                    <img src="/task-Digital-Design/images/icon-toys.png" alt="toys">
+                                    <figcaption>Игрушки и домики</figcaption>
+                                    </a>
+                        </figure>
+                                            
+                        <figure class="catalog_icon">
+                                    <a href="#">
+                                    <img src="/task-Digital-Design/images/icon-bowls-and-cups.png" alt="bowls-and-cups">
+                                    <figcaption>Миски и поилки</figcaption>
+                                    </a>
+                        </figure>
+                            
+                            
+                        <figure class="catalog_icon">
+                                    <a href="#">
                                 <img src="/task-Digital-Design/images/icon-shampoos.png" alt="shampoos">
-                                <figcaption>Косметика и груминг</figcaption>
-                                </a>
-                            </figure>
-                        </div>
-
-                        <div class="layout-1-column">
-
+                                    <figcaption>Косметика и груминг</figcaption>
+                                    </a>
+                        </figure>
+            
                         <figure class="catalog_icon">
                             <a href="#">
                             <img src="/task-Digital-Design/images/icon-medicines.png" alt="medicines">
                             <figcaption>Лекарства и витамины</figcaption>
                             </a>
                         </figure>
-                        
+                            
                         <figure class="catalog_icon">
                             <a href="#">
                             <img src="/task-Digital-Design/images/icon-collars-leashes.png" alt="collars_leashes">
-                            <figcaption>Одежда и переноски</figcaption>
+                            <figcaption>Одежда и лежанки</figcaption>
                             </a>
                         </figure>
-
                         <figure class="catalog_icon">
                             <a href="#">
                             <img src="/task-Digital-Design/images/icon-sleeping-area.png" alt="sleeping_areas">
-                            <figcaption>Лежанки и наполнители</figcaption>
+                            <figcaption>Туалеты и наполнители</figcaption>
                             </a>
                         </figure>
-
-                        </div>
+                        <figure class="catalog_icon">
+                            <a href="#">
+                            <img src="/task-Digital-Design/images/icon-transportation.png" alt="sleeping_areas">
+                            <figcaption>Переноски и шлейки</figcaption>
+                            </a>
+                        </figure>
                     </div>
-            </div>  
             </div>
         </section>
+
+
+        
 
 
     </main>
@@ -157,8 +180,13 @@
         
         </div>
     
-</footer>
+        <div class="go-top">
+            <img class="cat_btn" src='/task-Digital-Design/images/cat_btn.png' alt="cat_btn"> 
+        </div>
     
+</footer>
+<script src="/task-Digital-Design/js/theme.js"></script>
+<script src="/task-Digital-Design/js/data.js"></script>
+<script src="/task-Digital-Design/js/scroll.js"></script>
 
-</body>
 </html>

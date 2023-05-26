@@ -10,6 +10,11 @@
     --color-bg: rgb(104, 103, 103);
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+
 body {
     padding: 0;
     margin: 0;
@@ -40,11 +45,7 @@ h1, h2, p {
 }
 
 .header {
-    position: fixed; 
-    top: 0;  
-    left: 0;  
-    z-index: 100;   
-    width: 100%;
+    
     background-color: var(--color-bg);
     
 }
@@ -89,11 +90,6 @@ h1, h2, p {
     transition: all 1s ease;
 }
 
-
-
-
-
-
 .header_title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--color-primary);
@@ -113,55 +109,12 @@ h1, h2, p {
     text-align: center;
 }
 
-.headline_img {
-    width: 600px;
-    height: 600px;
-}
-
-
-.header_button {
-    display: inline-block;
-    font-size: 17px;
-    background-color: var(--color-bg);
-    color: var(--main-color);
-    line-height: 22.1px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 100px;
-    padding: 15px 45px;
-    letter-spacing: 0.06em;
-    
-}
-
-.header_colum {
-    display: flex;
-    padding: 150px 40px 0;
-}
-
-.header_content {
-    margin-top: 100px;
-    margin-right: 42px;
-}
-    
-
-.heading {
-    font-size: 44px;
-    padding-right: 150px;
-    padding-bottom: 42px;
-    color: var( --main-color);
-    line-height: 57.2px;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-
-
 
 /* Каталог */
 
 .catalog {
     background-color: var(--color-bg);
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -191,18 +144,6 @@ h1, h2, p {
 
 
 
-.column_catalog h2 {
-    margin-bottom: 80px;
-    font-size: 35px;
-    line-height: 45.5px;
-    color: var(--main-color);
-    letter-spacing: 0.06em;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
- }
-
-
 .wrapper_footer {
     padding: 40px;
     padding-bottom: 0;
@@ -219,10 +160,14 @@ h1, h2, p {
     justify-content: space-around;
 }
 
+
 .cat_footer {
     width: 320px;
     height: 270px;
+     
 }
+
+
 
 .email {
     padding-right: 27px;
@@ -237,13 +182,18 @@ h1, h2, p {
 }
 
 .questions h2,
-.wait h2 {
+.wait h2,
+.catalog_title {
     font-size: 35px;
     line-height: 45.5px;
     color: var(--main-color);
     letter-spacing: 0.06em;
     font-weight: 400;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.catalog_title {
+    text-align: center;
 }
 
 .questions h2 {
@@ -290,7 +240,7 @@ margin-bottom: 32px;
   }
   
 
-  /* Модификатор для отображения кнопки */
+  /* Модификатор для отображения кнопки вверх */
   .go-top--show {
     display: block;
   }
@@ -300,3 +250,22 @@ margin-bottom: 32px;
   }
 
  
+/* Кнопка "купить" и всплывающее окно */
+
+button[name="button_buy"],
+input[name="button_buy"] { 
+    
+    border-radius: 7px;
+    padding: 10px 25px;
+    background: var(--color-bg);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+  }
+
+  button[name="button_buy"]:hover { 
+    background: var(--color-primary);
+  } 
+
+  

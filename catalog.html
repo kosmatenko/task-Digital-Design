@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/task-Digital-Design/catalog.css">
+   
+    <title>Catalog</title>
+</head>
+
+<body>
+
+    
+    <header id="header" class="header">
+            
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <div class="header_title">КОТОМИР</div>
+                    <div class="header_subtitle">Без кота - жизнь не та</div>
+                </div>
+
+                
+
+                <nav class="nav">
+                    <ul class="nav_list">
+
+                        
+                        <li class="item">
+                            <a class="nav_link" href="/task-Digital-Design/main.html">Главная</a>
+                        </li>
+                        <li class="item">
+                            <a class="nav_link" href="/task-Digital-Design/catalog.html">Каталог</a>
+                        </li>
+                        <li class="item">
+                            <a class="nav_link" href="#footer">Контакты</a>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="theme" type="checkbox" onchange="changeTheme(this.checked)">
+                               
+                              </label>
+                            
+                        </li>
+                    </ul>
+                   
+                </nav>
+            </div>     
+        </div>
+        
+
+
+    </header>
+
+    <main class="main">
+
+    
+        <section id="catalog" class="catalog">
+            <div class="container">
+                
+                    <div class="column">
+
+                        
+
+                                
+                                <figure class="catalog_icon">
+                                            <a href="#">
+                                            <img src="/task-Digital-Design/images/icon-pet-food.png" alt="pet-food">
+                                            <figcaption>Корм сухой и влажный</figcaption>
+                                            </a>
+                                </figure>
+                                                             
+                                <figure class="catalog_icon">
+                                            <a href="#">
+                                            <img src="/task-Digital-Design/images/icon-toys.png" alt="toys">
+                                            <figcaption>Игрушки и домики</figcaption>
+                                            </a>
+                                </figure>
+                            
+                                                    
+                                <figure class="catalog_icon">
+                                            <a href="#">
+                                            <img src="/task-Digital-Design/images/icon-bowls-and-cups.png" alt="bowls-and-cups">
+                                            <figcaption>Миски и поилки</figcaption>
+                                            </a>
+                                </figure>
+                             
+                                <figure class="catalog_icon">
+                                            <a href="#">
+                                        <img src="/task-Digital-Design/images/icon-shampoos.png" alt="shampoos">
+                                            <figcaption>Косметика и груминг</figcaption>
+                                            </a>
+                                </figure>
+                            
+                
+                                <figure class="catalog_icon">
+                                    <a href="#">
+                                    <img src="/task-Digital-Design/images/icon-medicines.png" alt="medicines">
+                                    <figcaption>Лекарства и витамины</figcaption>
+                                    </a>
+                                </figure>
+                           
+                                
+                                <figure class="catalog_icon">
+                                    <a href="#">
+                                    <img src="/task-Digital-Design/images/icon-collars-leashes.png" alt="collars_leashes">
+                                    <figcaption>Одежда и лежанки</figcaption>
+                                    </a>
+                                </figure>
+                             
+                            <figure class="catalog_icon">
+                                <a href="#">
+                                <img src="/task-Digital-Design/images/icon-sleeping-area.png" alt="sleeping_areas">
+                                <figcaption>Туалеты и наполнители</figcaption>
+                                </a>
+                            </figure>
+
+                            <figure class="catalog_icon">
+                                <a href="#">
+                                <img src="/task-Digital-Design/images/icon-transportation.png" alt="sleeping_areas">
+                                <figcaption>Переноски и шлейки</figcaption>
+                                </a>
+                            </figure>
+                           
+                    </div>
+                
+
+                
+                 
+            </div>
+        </section>
+
+        <section>
+            <div class="container"> 
+
+                <div class="catalog_food">
+                    <h2 class="catalog_title">Корм сухой и влажный</h2>
+                    <div class="CatalogProducts_content">
+
+                        <figure class="CatalogProducts_foods">
+                            
+                            <img src="/task-Digital-Design/images/catalog_food/img_food_1.jpeg" alt="food1">
+                            <figcaption>Royal Canin</figcaption>
+<!--Дата-->
+                            
+                            <div class="js-date" data-date="01.01.2023"></div>
+
+                                
+                        
+                            <button type="button" name="button_buy"  onclick="window.myDialog.showModal();">Купить</button>
+                            <dialog id="myDialog">
+
+                                    <form action="">
+                                        <label>
+                                            Ваше имя
+                                            <input type="text" name="name" required="required">
+                                        </label>
+                                        <label>
+                                            Количество товара
+                                            <input name="number_buy" type="number" min="1">
+                                        </label>
+                                        <label>
+                                            Выберите цвет
+                                            <input   name="radio_buy" type="radio" value="1">
+                                            Красный
+                                            <input   name="radio_buy" type="radio" value="2">
+                                            Черный
+                                            <input   name="radio_buy" type="radio" value="3">
+                                            Синий
+                                            <input   name="radio_buy" type="radio" value="4">
+                                            Белый
+                                        
+
+                                        </label>
+                                        <label>
+                                            <textarea name="message" cols="30" rows="4" maxlength="2000" placeholder="Дополнительная информация к заказу"></textarea>
+                                        </label>
+
+                                     
+                                        <label>
+                                          <button type="button" name="button_buy"  onclick="alert('Ваш заказ оформлен');">Купить</button>
+                                          
+                                        </label>
+                                         
+                                        <label>
+                                            
+                                            <button  type="button" name="button_buy" onclick="window.myDialog.close();">закрыть</button>
+                                        
+                                          </label>
+                                         
+                                    </form>     
+                            </dialog>                       
+
+                        </figure>
+
+
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+
+            <div class="wrapper_footer">
+
+                <div class="questions">
+                    <h2>Для отзывов и предложений</h2>
+                    <p class="email">
+                        <a class="email_link" href="mailto:email@kotomir.com">email@kotomir.com</a>
+                    </p>
+                    <p class="tel"><a href="tel:+7 911 465 79 94" class="tel">+7 911 465 79 94</a></p>
+            
+                </div>
+
+                <div class="wait">
+                    <h2>У нас есть магазины:</h2>
+                    <p class="adress_1">ул. Школьная 23, Москва</p>
+                    <p class="adress_2">ул. Парковая 55, Москва</p>
+                </div>
+
+                <div class="img_footer">
+                    <img class="cat_footer" src="/task-Digital-Design/images/cat_footer.png" alt="cat">
+                </div>
+
+            </div>
+
+        
+        </div>
+        
+        <div class="go-top">
+            <img class="cat_btn" src='/task-Digital-Design/images/cat_btn.png' alt="cat_btn"> 
+        </div>
+    
+</footer>
+
+<script src="/task-Digital-Design/js/theme.js"></script>
+<script src="/task-Digital-Design/js/data.js"></script>
+<script src="/task-Digital-Design/js/scroll.js"></script>
+<script src="/task-Digital-Design/js/form.js"></script>
+
+</body>
+
+</html>
